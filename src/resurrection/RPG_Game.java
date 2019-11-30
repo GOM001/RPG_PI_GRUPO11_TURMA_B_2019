@@ -5,7 +5,22 @@ import java.util.Collections;
 
 
 public class RPG_Game {
+/*#############################################################################################################################################################
+ * 
+ * 
+ * 
+ * 
+ *  								MAIN
+ *  
+ * 
+ * 
+ * #############################################################################################################################################################
+ */
 
+			public static void main(String[] args) {
+			
+			init();
+			}
 /*#############################################################################################################################################################
  * 
  * 
@@ -54,6 +69,18 @@ public class RPG_Game {
  * 
  * #############################################################################################################################################################
  */
+				static void init() {
+				do {
+					int inicio = zero();
+					if (inicio == 2){
+						jogar();
+					}
+					else if (inicio == 3) {
+						continuarJogo();
+					}
+					}while(true);
+					}
+
 
 			//MÉTODO PARA CHAMAR INICIO E MENU (ZERO)
 			static int zero() {
@@ -369,6 +396,9 @@ public class RPG_Game {
 				"                        ██    ██     ██       \n" 
 				);
 				centro(3);
+				drible();
+				continuar();
+				init();
 					
 		}
 		
@@ -415,6 +445,12 @@ public class RPG_Game {
 				"                                                    Vila T\n" +
 				"                                               Novembro de 2019");
 			centro(16);
+			continuar();
+			
+			centro(16);
+			System.out.println("                                      Digite o Nome do Personagem");
+			centro(16);
+			login[posicaoLoginAtual] = sc.next();
 			continuar();
 			
 			
@@ -792,7 +828,6 @@ public class RPG_Game {
 					"");
 			
 			continuar();
-			
 			fase[posicaoLoginAtual] = 1;
 			direcionaFaze();
 		}
@@ -971,6 +1006,7 @@ public class RPG_Game {
 		imgdesafio1();
 		String r = "";
 		String resp = "";
+		boolean gm = true;
 		String lul = "número do pulo * 3";
 		int n1 = 0;
 		ArrayList<String> resposta = new ArrayList<String>();
@@ -1019,16 +1055,29 @@ public class RPG_Game {
 
 			default:
 				System.out.println("Alternativa inválida");
+				drible();
+				continuar();
 			}
-
 			if (lul.equals(resp)) {
 				System.out.println("Resposta correta!");
-				n1 = n1 + 2;
-
+				n1 = n1 + 5;
+				gm = false;
+				drible();
+				continuar();
 			} else {
 				System.out.println("Resposta incorreta!");
+
+				n1++;
+
+				gm = true;
+				drible();
+				continuar();
 			}
-		} while (n1 <= 1);
+		} while (n1 <= 2);
+
+		if (gm == true) {
+			gameOver();
+		}
 		fase[posicaoLoginAtual] = 2;
 		direcionaFaze();
 	}
@@ -1363,31 +1412,7 @@ public class RPG_Game {
 					+ "");
 			sc.nextLine();
 		}
-		
-/*#############################################################################################################################################################
- * 
- * 
- * 
- * 
- *  								MAIN
- *  
- * 
- * 
- * #############################################################################################################################################################
- */
-		
 
-	public static void main(String[] args) {
-	do {
-	int inicio = zero();
-	if (inicio == 2){
-		jogar();
-	}
-	else if (inicio == 3) {
-		continuarJogo();
-	}
-	}while(true);
-	}
-	
-
+		
+		// QUEBRA DO PACKEGE	
 }
