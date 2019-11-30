@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class RPG_Game {
+public class RPG_Game_ArquivoPara_edicao {
 /*#############################################################################################################################################################
  * 
  * 
