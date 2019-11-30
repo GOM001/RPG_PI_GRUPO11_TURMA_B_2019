@@ -89,7 +89,7 @@ public class RPG_Game {
 				login[1] = "GOMII";
 				fase[1] = 2;
 				login[2] = "GOMIII";
-				fase[2] = 3;
+				fase[2] = 7;
 				int parada = 0;
 				do {
 					inicio();
@@ -365,6 +365,10 @@ public class RPG_Game {
 				desafio5();
 			case 6:
 				desafio6();
+			case 7:
+				fim();
+			case 8:
+				//Tela de Incio especial
 			default:
 				break;
 			}
@@ -1434,127 +1438,130 @@ public class RPG_Game {
  * 
  * #############################################################################################################################################################
  */
+	static void imgdesafio3() {
+		System.out.println("\n"
+				+"                           ______________________________________________________________________                                             \n"+
+				"                          |                                                                      |\n"+
+				 "                          | - Olá criatura desprezível, está preparado para  uma morte terrível? |                                             \n" + 
+				"                          |    Sou a KumoKumo  mas pode me chamar de presságio do seu horror     |                                        \n"+
+				 "                          /   ___________________________________________________________________|                                                                                                                   \n"+
+				"                         /                          \\_*_____/                                                                                   \r\n" + 
+				"                                                    /\\*_|__/\\                                                                                   \n"+
+				"░▄████░▀▄░░░░░░░▄▀░█████▄░                         / /\\_|*/\\ \\                                                                                \r\n" +
+				"████▀█▀▄█████████▄▀█▀████░                       _/_/_/\\|/\\_*_\\_                                                                              \n"+
+				"▀▀░▀▄█████▀▀▀▀▀░▀███▄▀░▀▀░                        \\ \\ \\/|\\* / /                                                                               \r\n" + 
+				"░░░░████▀▄░░██░░▄░███░░░░░                         * \\/_|*\\/ /                                                                                 \n"+
+				"░░░▄███▀▄▀▀░▀▀░▀▀▄▀██▄░░░░                          \\/__|__\\/         \\*__*_|_*___/                                                             \r\n" + 
+				"░▄▄████░███▄░░▄███░███▄▄░░                          /       \\         /\\____|____/\\                                                             \r\n" + 
+				"░░█████░░▀▀░░░░▀▀░░████░░░                                           / /\\___|__*/\\ \\                                                           \r\n" + 
+				"░░░▀▀███▄░▀▄▀▀▄▀░▄██▀▀░░░░           \\____|____/                    / * /\\_*|__/\\ \\ \\                                                            \r\n" + 
+				"░░░░░░░░░▀▄▄░░▄▄█░░░░░░░░░           *\\___|_*_/\\                   / / / /\\_|_/\\ * \\ \\                                                             \r\n" + 
+				"░░░░░░░░▄▀▀▄▀▀▄▀▀▄░░░░░░░░          / /\\*_|_ /\\ \\               __/_*_/_/*/\\|/*_\\_\\_*_\\_                                                                  \r\n" + 
+				"░▄▄▄▄▄▀▀▀██░▄▄░██▀▀▀▄▄▄▄▄░         / / /\\_|_/\\ \\ \\                \\ * \\ \\ \\/|\\/ / / / /                                                             \r\n" + 
+				"▀▄▄▀░░░▄▀█▀█▀▀█▀█▀▄░░░▀▄▄▀      __/_/_*_/\\|/\\_\\_\\*\\__              \\ \\ \\ \\/_|_\\/ * / /                                                              \r\n" + 
+				"░░▄▄▄▄▀▄█▀░▄░░▄░▀█▄▀▄▄▄▄░░        \\ \\ \\ \\/|\\/ / / /                 * \\ \\/__|__\\/ / /                                                             \r\n" + 
+				"░▀▄▄▀░▄▀█░░▄▄▄▄░░█▀▄░▀▄▄▀░         * \\ \\/_|_\\/ * /                   \\ */___|_*_\\/ /                                                           \r\n" + 
+				"░░░░░█▀▄░▀▄▀░░▀▄▀░▄▀█░░░░░          \\ \\/__|*_\\/ /                     \\/_*__|____\\*                                                            \r\n" + 
+				"░░░░░█▄▀░░█▄░░▄█░░▀▄█░░░░░           \\/_*_|___\\/                      /     |     \\                                                            \r\n" + 
+				"░░░░░░░░░▄█▀░░▀█▄░░░░░░░░░           /    |    \\                                                                                                  \r\n" + 
+				 "");
+		centro(5);
+		continuar();
+		
+		
+	}static void desafio3() {
+		faze();
+		imgdesafio3();
+		String r = "";
+		boolean gm = true;
+		String resp = "";
+		String lul = "Fios de teia  = 4 * peso * 1000 Aneis de Teia = (1000 *  peso * 4) / 12";
+		int n1 = 0;
+		ArrayList<String> resposta = new ArrayList<String>();
+		resposta.add("Fios de teia  = 4 * peso * 1000 Aneis de Teia = (1000 *  peso * 4) / 12"); // correta
+		resposta.add("Fios de teia  = 4 * peso * 900\\r Aneis de Teia = (900 *  peso * 4) / 12");
+		resposta.add("Fios de teia  = 2 * peso * 1000\\r Aneis de Teia = (1000 *  peso * 2) / 9");
+		resposta.add("Não confiar na aranha, e pular em qualquer lugar do abismo"); 
 
-		static void imgdesafio3() {
-			System.out.println("\n"
-					+"                           ______________________________________________________________________                                             \n"+
-					"                          |                                                                      |\n"+
-					 "                          | - Olá criatura desprezível, está preparado para  uma morte terrível? |                                             \n" + 
-					"                          |    Sou a KumoKumo  mas pode me chamar de presságio do seu horror     |                                        \n"+
-					 "                          /   ___________________________________________________________________|                                                                                                                   \n"+
-					"                         /                          \\_*_____/                                                                                   \r\n" + 
-					"                                                    /\\*_|__/\\                                                                                   \n"+
-					"░▄████░▀▄░░░░░░░▄▀░█████▄░                         / /\\_|*/\\ \\                                                                                \r\n" +
-					"████▀█▀▄█████████▄▀█▀████░                       _/_/_/\\|/\\_*_\\_                                                                              \n"+
-					"▀▀░▀▄█████▀▀▀▀▀░▀███▄▀░▀▀░                        \\ \\ \\/|\\* / /                                                                               \r\n" + 
-					"░░░░████▀▄░░██░░▄░███░░░░░                         * \\/_|*\\/ /                                                                                 \n"+
-					"░░░▄███▀▄▀▀░▀▀░▀▀▄▀██▄░░░░                          \\/__|__\\/         \\*__*_|_*___/                                                             \r\n" + 
-					"░▄▄████░███▄░░▄███░███▄▄░░                          /       \\         /\\____|____/\\                                                             \r\n" + 
-					"░░█████░░▀▀░░░░▀▀░░████░░░                                           / /\\___|__*/\\ \\                                                           \r\n" + 
-					"░░░▀▀███▄░▀▄▀▀▄▀░▄██▀▀░░░░           \\____|____/                    / * /\\_*|__/\\ \\ \\                                                            \r\n" + 
-					"░░░░░░░░░▀▄▄░░▄▄█░░░░░░░░░           *\\___|_*_/\\                   / / / /\\_|_/\\ * \\ \\                                                             \r\n" + 
-					"░░░░░░░░▄▀▀▄▀▀▄▀▀▄░░░░░░░░          / /\\*_|_ /\\ \\               __/_*_/_/*/\\|/*_\\_\\_*_\\_                                                                  \r\n" + 
-					"░▄▄▄▄▄▀▀▀██░▄▄░██▀▀▀▄▄▄▄▄░         / / /\\_|_/\\ \\ \\                \\ * \\ \\ \\/|\\/ / / / /                                                             \r\n" + 
-					"▀▄▄▀░░░▄▀█▀█▀▀█▀█▀▄░░░▀▄▄▀      __/_/_*_/\\|/\\_\\_\\*\\__              \\ \\ \\ \\/_|_\\/ * / /                                                              \r\n" + 
-					"░░▄▄▄▄▀▄█▀░▄░░▄░▀█▄▀▄▄▄▄░░        \\ \\ \\ \\/|\\/ / / /                 * \\ \\/__|__\\/ / /                                                             \r\n" + 
-					"░▀▄▄▀░▄▀█░░▄▄▄▄░░█▀▄░▀▄▄▀░         * \\ \\/_|_\\/ * /                   \\ */___|_*_\\/ /                                                           \r\n" + 
-					"░░░░░█▀▄░▀▄▀░░▀▄▀░▄▀█░░░░░          \\ \\/__|*_\\/ /                     \\/_*__|____\\*                                                            \r\n" + 
-					"░░░░░█▄▀░░█▄░░▄█░░▀▄█░░░░░           \\/_*_|___\\/                      /     |     \\                                                            \r\n" + 
-					"░░░░░░░░░▄█▀░░▀█▄░░░░░░░░░           /    |    \\                                                                                                  \r\n" + 
-					"\n"+
-					"                            █████████████████████        \n" + 
-					"                           █████████████████████████       \n" + 
-					"                         █████████████████████████████       \n" + 
-					"                       ███████████████████████████████   \n" + 
-					"                       █████████████████████████████████  \n" + 
-					"                       ███████████████████████████████████  \n" + 
-					"                       ███████████████████████████████████\n" + //back
-					"                     ███████████████████████████████████████\n" + 
-					"                     ███████████████████████████████████████\n" + 
-					"                     ███████████████████████████████████████\n" + 
-					"                     ███████████████████████████████████████\n" + 
-					"                     ███████████████████████████████████████\n" + 
-					"                     ████████████             ██████████████\n" + 
-					"                       ██  ████████████    █████████  ██  \n" + 
-					"                                     ██    ██  "
-					+ "    \n" +
-					 "");
-			sc.nextLine();
+		do {
 			
+			System.out.println("                                     Qual alternativa está correta? ");
+			Collections.shuffle(resposta);
+			System.out.println("                                     A)" + resposta.get(0));
+			System.out.println("                                     B)" + resposta.get(1));
+			System.out.println("                                     C)" + resposta.get(2));
+			System.out.println("                                     D)" + resposta.get(3));
 			
-		}static void desafio3() {
-			faze();
-			imgdesafio3();
-			String r = "";
-			boolean gm = true;
-			String resp = "";
-			String lul = "Fios de teia  = 4 * peso * 1000 Aneis de Teia = (1000 *  peso * 4) / 12";
-			int n1 = 0;
-			ArrayList<String> resposta = new ArrayList<String>();
-			resposta.add("Fios de teia  = 4 * peso * 1000 Aneis de Teia = (1000 *  peso * 4) / 12"); // correta
-			resposta.add("Fios de teia  = 4 * peso * 900\\r Aneis de Teia = (900 *  peso * 4) / 12");
-			resposta.add("Fios de teia  = 2 * peso * 1000\\r Aneis de Teia = (1000 *  peso * 2) / 9");
-			resposta.add("Não confiar na aranha, e pular em qualquer lugar do abismo"); 
+			r = sc.next();
 
-			do {
-				
-				System.out.println("                                     Qual alternativa está correta? ");
-				Collections.shuffle(resposta);
-				System.out.println("                                     A)" + resposta.get(0));
-				System.out.println("                                     B)" + resposta.get(1));
-				System.out.println("                                     C)" + resposta.get(2));
-				System.out.println("                                     D)" + resposta.get(3));
-				
-				r = sc.next();
-
-				
-
-				switch (r) {
-				case "a":
-				case "A":
-
-					resp = resposta.get(0);
-					break;
-				case "b":
-				case "B":
-
-					resp = resposta.get(1);
-					break;
-				case "c":
-				case "C":
-
-					resp = resposta.get(2);
-					break;
-				case "d":
-				case "D":
-
-					resp = resposta.get(3);
-					break;
-
-				default:
-					System.out.println("Alternativa inválida");
-					continuar();
-				}
-
-				if (lul.equals(resp)) {
-					System.out.println("Resposta correta!");
-					n1 = n1 + 5;
-					gm=false;
-					continuar();
-
-				} else {
-					System.out.println("Resposta incorreta!");
-					n1++;
-					gm=true;
-					continuar();
-				}
-			} while (n1 <= 2);
 			
-			if (gm==true){
-				gameOver();
-				}
-			fase[posicaoLoginAtual] = 4;
-			direcionaFaze();
+
+			switch (r) {
+			case "a":
+			case "A":
+
+				resp = resposta.get(0);
+				break;
+			case "b":
+			case "B":
+
+				resp = resposta.get(1);
+				break;
+			case "c":
+			case "C":
+
+				resp = resposta.get(2);
+				break;
+			case "d":
+			case "D":
+
+				resp = resposta.get(3);
+				break;
+
+			default:
+				System.out.println("Alternativa inválida");
+				continuar();
+			}
+
+			if (lul.equals(resp)) {
+				System.out.println("Muito bem mortal, estou impressionada com seu raciocínio. Você conseguiu impressionar a grande kumokumo, siga seu caminho.");
+				n1 = n1 + 5;
+				gm=false;
+				continuar();
+
+			} else {
+				System.out.println("Haha mortal inútil da minhas teias não ira conseguir escapar.");
+				n1++;
+				gm=true;
+				continuar();
+			}
+		} while (n1 <= 2);
+		
+		if (gm==true){
+			gameOver();
+			}
+		transicao4();
+	}
+
+	
+	static void transicao4() {
+		centro(16);
+		System.out.println(
+				
+				" "
+				+ ""
+				+ ""
+				+ ""
+				+ ""
+				+ "                        Ao passa por diversas dificuldade,*variavel nome* segue a oeste como orientado pela aranha assustadora. \n"+
+				  "                                       O mesmo entra em um grande matagal e segue ao norte conforme falado,\n "
+				+ "                     porém o mesmo vê uma figura  longe semelhante a um animal ao chegar mais perto ele vê um gato escondido em um arbusto ");
+	    	centro(16);
+	    	continuar();
+	    	
+	    	
+		fase[posicaoLoginAtual] = 4;
+		direcionaFaze();
 		}
 	
 /*#############################################################################################################################################################
@@ -1586,32 +1593,6 @@ public class RPG_Game {
 					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" + 
 					"████████████████████████████████\r\n" + 
 					"\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
 					+ "\n"
 					+ "\n"
 					+ "");
@@ -1686,14 +1667,25 @@ public class RPG_Game {
 			if (gm==true){
 			gameOver();
 			}
+			transicao5();
 			
+
+	}
+		static void transicao5() {
+			centro(16);
+			
+			System.out.println("                                  Ao passar pelo desafio do gato o jogador entra em um arbusto que o gato lhe havia informado. \n"+
+					"                      Ao sair o mesmo percebe que está em um campo totalmente aberto, em seus pés algo que parece uma areia de praia porem totalmente de cor preta. \n"+
+					"                                  ele segue caminhando nesse campo e encontra uma flor, parecida com um girassol que esta meio caída.\n"+
+					"                                    mas ao perceber sua presença ela se ergue e lhe abre um belo sorriso... \n"+
+					"                                  E lhe diz : Seja bem vindo a floresta das ilusões : Você está bem perto do que tanto deseja!");
+			centro(16);
+			
+			continuar();
 			fase[posicaoLoginAtual] = 5;
 			direcionaFaze();
 
-	}
-			
-		
-		
+			}		
 /*#############################################################################################################################################################
  * 	
  * 			        █████████████▀▀▀▀▀███████▀▀▀▀▀█████████████ 
@@ -1723,6 +1715,7 @@ public class RPG_Game {
 		
 		
 		static void imgdesafio5() {
+			faze();
 			System.out.println("\n"
 				+   "█████████████▀▀▀▀▀███████▀▀▀▀▀█████████████\r\n" + 
 					"█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████\r\n" + 
@@ -1746,191 +1739,131 @@ public class RPG_Game {
 					
 					"\n"
 					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
-					+ "\n"
 					+ "");
 			sc.nextLine();
 		}
 		
-		
-			
-			
+
 			static void desafio5() {
-				faze();
-				int i = 1;
-			boolean gm = true;
-				ArrayList<Integer> resp = new ArrayList<Integer>(); // Opcoes de respostas em um arraylist
+				imgdesafio5();
+				int i = 1, resposta =0 , respcorreta =  22;
+				ArrayList<Integer> resp = new ArrayList<Integer>();
+
 				 resp.add(20);
 				 resp.add(14);
 				 resp.add(22);
 				 resp.add(38);
 				 resp.add(7);
-				 
-			
+				 boolean gm = false;
 			do {
-			imgdesafio5();
-			System.out.println("Ok mortal ansioso pela vida, aqui vai meu desafio: vocÃƒÂª estÃƒÂ¡ em ambiente inÃƒÂ³spito que inicialmente  tem 125 bactÃƒÂ©rias"+
-			"\n Sabendo-se que essa populaÃƒÂ§ÃƒÂ£o de bactÃƒÂ©rias dobra a cada 2 horas, o tempo necessÃƒÂ¡rio, em horas, para que o nÃƒÂºmero de bactÃƒÂ©rias cheguem a 256.000, ÃƒÂ© igual a: "+
+			
+			System.out.println("Ok Mortal ansioso pela vida, aqui vai meu desafio: Olhe ao seu redor mero mortal, você está em uma ambiente inóspito que inicialmente contem 125 bactérias"+
+			"\n sabendo que essa população de bactérias dobra a cada 2 horas, o tempo necessário em hora para o numero de bactérias cheguem a 256.000 é igual a : "+
 			"\n a)"+resp.get(0)+"\n b)"+resp.get(1)+"\n c)"+resp.get(2)+"\n d)"+resp.get(3)+"\n e)"+resp.get(4));
 			String escolha = sc.next(); // entrada do usuario, opcao escolhida
 			
-			switch (escolha) { 
 			
-			case "a":
-			case "A":
-				if (resp.get(0)==22) {
-					System.out.println(" ParabÃƒÂ©ns Voce Acertou! ");
-					i = 3;
-					gm = false;
-				}
-				else {
-					gm=true;
-					i=i+1;;
-					System.out.println(" Tente novamente!");
-				}
-				break;
-			case "b":
-			case "B":
-				if (resp.get(1)==22) {
-					System.out.println(" ParabÃƒÂ©ns Voce Acertou! ");
-					i = 3;
-					gm = false;
-				}
-				else {
-					gm=true;
-					i=i+1;;
-					System.out.println(" Tente novamente!");
-				}
-				break;
-			case "c":	
-			case "C":
-				if (resp.get(2)==22) {
-					System.out.println(" ParabÃƒÂ©ns Voce Acertou! ");
-					i = 3;
-					gm = false;
+					switch (escolha) {
+
+					case "a":
+					case "A":
+						resposta = resp.get(0);
+						break;
+					case "b":
+					case "B":
+						resposta = resp.get(1);
+						break;
+					case "c":
+					case "C":
+						resposta = resp.get(2);		
+						break;
+					case "D":
+					case "d":
+						resposta = resp.get(3);
+						break;
+					case "e":
+					case "E":
+						resposta = resp.get(4);
+					default:
+
+						System.out.println(" Opcao Invalida! Tente Novamente.");
+									}
+					if(resposta == respcorreta) {
+						gm = false;
+						System.out.println(" O que ? ");
+						i = 5;
 					}
-				else {
-					gm=true;
-					i=i+1;;
-					System.out.println(" Tente novamente!");
-				}
-				break;
-			
-			case "D" :
-			case "d" :
-				if (resp.get(3)==22) {
-					System.out.println(" ParabÃƒÂ©ns Voce Acertou! ");
-					i = 3;
-					gm = false;
-				}
-				else {
-					gm=true;
-					i=i+1;;
-					System.out.println(" Tente novamente!");
-				}break;
-			case "e":
-			case "E":
-				if (resp.get(4)==22) {
-					System.out.println(" ParabÃƒÂ©ns Voce Acertou! ");
-					i = 3;
-					gm = false;
-				}
-				else {
-					gm=true;
-					i=i+1;;
-					System.out.println(" Tente novamente!");
-				}
-			
-								
-			default : 
-				gm=true;
-				i=i+1;;
-				System.out.println(" Opcao Invalida!");
-				
-			}
-			Collections.shuffle(resp);
-			
-			}while(i<=2);
-			
-				if(gm==true) {
-					
+					else {
+						gm = true;
+						System.out.println(" Não foi dessa vez mortal  "+"\n");
+						i++;
+					}
+					Collections.shuffle(resp);
+					} while (i < 3);
+					if(gm==true) {
+						
 					gameOver();
-			}
-		
+					}
+					imgdesafio6();
 			fase[posicaoLoginAtual] = 6;
 			direcionaFaze();
 		}
 		
 		
+/*#############################################################################################################################################################
+ * 	
+ * 			        █████████████▀▀▀▀▀███████▀▀▀▀▀█████████████ 
+ *					█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████ 
+ *					████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████ 
+ *					████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████
+ *					██▀░░░░░░██▀░░░░░░██░░░██░░░░░░▀██░░░░░░▀██
+ *					█░░░▀▀▀▀███░░░░░░░██░░░██░░░░░░░███▀▀▀▀░░░█ 
+ *					█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█ 
+ *					████▄░░░░▀██░░░░███████████░░░░██▀░░░░▄████
+ *					██████████▀██▄░░░▀███████▀░░░▄██▀██████████ 
+ *					███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████ 
+ *					██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████ 
+ *					██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████ 
+ *					████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████ 
+ *					██████████████████▀░░▀█████████████████████ 
+ *					█████████████████▀░░░▄█████████████████████
+ *					█████████████████░░░███████████████████████ 
+ *					██████████████████░░░▀█████████████████████ 
+ *					███████████████████▄░░░████████████████████ 
+ *					█████████████████████░░░███████████████████
+ * 
+ *  					              DESAFIO 6
+ * 
+ * #############################################################################################################################################################	
+*/	
+	
+	
 		
-		/*#############################################################################################################################################################
-		 * 	
-		 * 			        █████████████▀▀▀▀▀███████▀▀▀▀▀█████████████ 
-		 *					█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████ 
-		 *					████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████ 
-		 *					████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████
-		 *					██▀░░░░░░██▀░░░░░░██░░░██░░░░░░▀██░░░░░░▀██
-		 *					█░░░▀▀▀▀███░░░░░░░██░░░██░░░░░░░███▀▀▀▀░░░█ 
-		 *					█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█ 
-		 *					████▄░░░░▀██░░░░███████████░░░░██▀░░░░▄████
-		 *					██████████▀██▄░░░▀███████▀░░░▄██▀██████████ 
-		 *					███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████ 
-		 *					██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████ 
-		 *					██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████ 
-		 *					████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████ 
-		 *					██████████████████▀░░▀█████████████████████ 
-		 *					█████████████████▀░░░▄█████████████████████
-		 *					█████████████████░░░███████████████████████ 
-		 *					██████████████████░░░▀█████████████████████ 
-		 *					███████████████████▄░░░████████████████████ 
-		 *					█████████████████████░░░███████████████████
-		 * 
-		 *  					              DESAFIO 6
-		 * 
-		 * #############################################################################################################################################################	
-		*/	
-				
-				
-				
-				static void imgdesafio6() {
-					System.out.println("\n"
-							+ "█████████████▀▀▀▀▀███████▀▀▀▀▀█████████████  Maldita criatura como ousa, !!!!!!\r\n" + 
-							"█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████  você superou minhas expectativas. \r\n" + 
-							"████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████  isso não ficará assim, daqui você não passará\r\n" + 
-							"████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████\r\n" + 
-							"██▀░░░░░░██▀░░░░░█▄░░░░░▄█░░░▀██░░░░░░▀████\r\n" + 
-							"█░░░▀▀▀▀███░░░░░░▀██░░░██▀░░░░░░███▀▀▀▀░░░█\r\n" + 
-							"█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█\r\n" + 
-							"████▄░░░░▀██░░░░█ █  █  █ █░░░░██▀░░░░▄████\r\n" + 
-							"██████████▀██▄░░░▀█ █ █ ▀▀░░░▄██▀██████████\r\n" + 
-							"███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████\r\n" + 
-							"██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████\r\n" + 
-							"██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████\r\n" + 
-							"████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████\r\n" + 
-							"██████████████████▀░░▀█████████████████████\r\n" + 
-							"█████████████████▀░░░▄█████████████████████\r\n" + 
-							"█████████████████░░░███████████████████████\r\n" + 
-							"██████████████████░░░▀█████████████████████\r\n" + 
-							"███████████████████▄░░░████████████████████\r\n" + 
-							"█████████████████████░░░███████████████████\r\n" + 
+		static void imgdesafio6() {
+			centro(7);
+			System.out.println("\n"
+					+ "█████████████▀▀▀▀▀███████▀▀▀▀▀█████████████  Maldita criatura como ousa, !!!!!!\r\n" + 
+					"█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████  você superou minhas expectativas. \r\n" + 
+					"████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████  isso não ficará assim, daqui você não passará\r\n" + 
+					"████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████\r\n" + 
+					"██▀░░░░░░██▀░░░░░█▄░░░░░▄█░░░▀██░░░░░░▀████\r\n" + 
+					"█░░░▀▀▀▀███░░░░░░▀██░░░██▀░░░░░░███▀▀▀▀░░░█\r\n" + 
+					"█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█\r\n" + 
+					"████▄░░░░▀██░░░░█ █  █  █ █░░░░██▀░░░░▄████\r\n" + 
+					"██████████▀██▄░░░▀█ █ █ ▀▀░░░▄██▀██████████\r\n" + 
+					"███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████\r\n" + 
+					"██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████\r\n" + 
+					"██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████\r\n" + 
+					"████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████\r\n" + 
+					"██████████████████▀░░▀█████████████████████\r\n" + 
+					"█████████████████▀░░░▄█████████████████████\r\n" + 
+					"█████████████████░░░███████████████████████\r\n" + 
+					"██████████████████░░░▀█████████████████████\r\n" + 
+					"███████████████████▄░░░████████████████████\r\n" + 
+					"█████████████████████░░░███████████████████\r\n" + 
 							"");
-					sc.nextLine();
+			centro(5);
+					continuar();
 				}
 				
 				static void desafio6() {
@@ -1941,6 +1874,12 @@ public class RPG_Game {
 					fase[posicaoLoginAtual] = 7;
 					direcionaFaze();
 				}
+				
+			static void fim() {
+				centro(16);
+				System.out.println("                   FIM DO JOGO");
+				centro(16);
+			}
 				
 		// QUEBRA DO PACKEGE	
 }
