@@ -19,7 +19,7 @@ public class RPG_Game {
 		//VARIÁVEIS EM ESCOPO GLOBAL
 		static String [] login =  new String [5];
 		static int [] fase = new int [5];
-	
+		static int posicaoLoginAtual = 0;
 	
 		//DEFINIÇÃO ESTÁTICA DO MÉTODO SCANNER
 		static Scanner sc = new Scanner (System.in);
@@ -57,9 +57,10 @@ public class RPG_Game {
 
 			//MÉTODO PARA CHAMAR INICIO E MENU (ZERO)
 			static int zero() {
-				//login[0] = "GOM";
-				//login[1] = "GOMII";
-				//fase[0] = 1;
+				login[0] = "GOM";
+				login[1] = "GOMII";
+				fase[0] = 0;
+				fase[1] = 1;
 				int parada = 0;
 				do {
 					inicio();
@@ -291,18 +292,10 @@ public class RPG_Game {
 		// METODO JOGAR
 		static void jogar() {
 			System.out.println("Jogar");
-			int posicaoLogin = posicaoLivre();
-			int faseAtual = fase[posicaoLogin];
-			switch (faseAtual) {
-			case 0:
-				introducao();
-			case 1:
-				desafio1();
-			case 2:
-				desafio2();
-			default:
-				break;
-			}
+			posicaoLoginAtual = posicaoLivre();
+			fase[posicaoLoginAtual] = -1;
+			direcionaFaze();
+			
 		}
 		
 		//METODO CONTINUAR JOGO
@@ -318,9 +311,36 @@ public class RPG_Game {
 					System.out.println("");
 				}
 			}
-			
 			centro(15);
+			posicaoLoginAtual = sc.nextInt()-1;
+			direcionaFaze();
 		}
+		
+		// MÉTODO DIRECIONAR A FAZE
+		static void direcionaFaze() {
+			int faseAtual = fase[posicaoLoginAtual];
+			switch (faseAtual) {
+			case -1:
+				introducao();
+			case 0:
+				posMorte();
+			case 1:
+				desafio1();
+			case 2:
+				desafio2();
+			case 3:
+				//desafio3();
+			case 4:
+				//desafio4();
+			case 5:
+				//desafio5();
+			case 6:
+				//desafio6();
+			default:
+				break;
+			}
+		}
+		
 		
 		
 	static void gameOver() {
@@ -600,9 +620,8 @@ public class RPG_Game {
 				"                                  Diante Desta Escolha\n" +
 				"                                   Apenas duas opções\n" +
 				"                                 O que você vai Fazer?\n\n"+
-				"                                                         Selecione sua resposta\n"+
-				"                                 1 - Fazer o Asalto"+
-				"                                 2 - Seguir seu caminho");
+				"                                 Selecione sua resposta\n"+
+				"              1 - Fazer o Asalto                           2 - Seguir seu caminho");
 			centro(16);
 			String acao = sc.next();
 			continuar();
@@ -665,7 +684,7 @@ public class RPG_Game {
 			default:
 				break;
 			}
-			
+			fase[posicaoLoginAtual] = 0;
 			centro(16);
 			System.out.println("\n"
 					
@@ -675,21 +694,27 @@ public class RPG_Game {
 					+ "");
 			centro(16);
 			continuar();
+			direcionaFaze();
+		}
+		
+		static void posMorte() {
 			
 			centro(16);
 			System.out.println("\n"
 					
-					+ "                                    Em um estado espiritual o Protagonista se vê fora da sua mente em um mundo\n"
-					+ "                                              paralelo e é recebido pelo orientador das almas, \n"
-					+ "                                        que informa que não esperava a sua ida para o mundo do julgamento."
+					+ "                                    Você não sente mais o seu corpo. Tudo está leve e calmo, é como se você levitasse\n"
+					+ "                                              Você não vê nenhuma cor nenhuma luz, mas parece que tudo está tão bem \n"
+					+ "                                                                      Tudo está tão certo."
 					+ "");
 			centro(16);
+			drible();
 			continuar();
 			
-			System.out.println("\n                             _________________________________________________________________________                     \n     "
-					+ "                       |   Se quiser Voltar para o seu mundo deve completar os desafios do meu,  |                   \n "
-					+ "                           |            você terá um dia terrestre para completar.                   |      \n"
-					+ "                            |  _______________________________________________________________________|        \n           "
+			System.out.println(
+					  "                        _________________________________________________________________________\n"
+					+ "                       |   Se quiser Voltar para o seu mundo deve completar os desafios do meu,  |\n"
+					+ "                       |            você terá um dia terrestre para completar.                   |\n"
+					+ "                       |_________________________________________________________________________|\n"
 					+ "                 /  \n"
 					+ "\n"
 					+ "       █▌    ▄▄▄▄  ▐█\n" + 
@@ -768,6 +793,8 @@ public class RPG_Game {
 			
 			continuar();
 			
+			fase[posicaoLoginAtual] = 1;
+			direcionaFaze();
 		}
 		
 		
@@ -1002,7 +1029,8 @@ public class RPG_Game {
 				System.out.println("Resposta incorreta!");
 			}
 		} while (n1 <= 1);
-
+		fase[posicaoLoginAtual] = 2;
+		direcionaFaze();
 	}
 	
 	
@@ -1350,6 +1378,7 @@ public class RPG_Game {
 		
 
 	public static void main(String[] args) {
+	do {
 	int inicio = zero();
 	if (inicio == 2){
 		jogar();
@@ -1357,7 +1386,7 @@ public class RPG_Game {
 	else if (inicio == 3) {
 		continuarJogo();
 	}
-	
+	}while(true);
 	}
 	
 
