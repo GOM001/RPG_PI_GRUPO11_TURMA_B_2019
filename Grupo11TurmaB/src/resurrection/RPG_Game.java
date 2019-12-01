@@ -89,7 +89,7 @@ public class RPG_Game {
 				login[1] = "PH Fodão";
 				fase[1] = 2;
 				login[2] = "Gom";
-				fase[2] = 5
+				fase[2] = 6
 						
 						;
 				login[3] = "FPohaLoka";
@@ -2192,7 +2192,8 @@ public class RPG_Game {
 				" " + "" + "" + "" + ""
 						+ "                        Ao passa por diversas dificuldade,você segue a oeste como orientado pela aranha assustadora. \n"
 						+ "                                      entra em um grande matagal e segue por uma trilha bem demarcada\n "
-						+ "                     porém o  vê uma figura  longe semelhante a um animal ao chegar mais perto, você vê um gato escondido em um arbusto ");
+						+ "                     porém o  vê uma figura  longe semelhante a um animal ao chegar mais pert"
+						+ "");
 		centro(16);
 		continuar();
 
@@ -2915,8 +2916,8 @@ public class RPG_Game {
 						+ "█████████████████░░░███████████████████████                            Você                       \n"
 						+ "██████████████████░░░▀█████████████████████             1| ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n"
 						+ "███████████████████▄░░░████████████████████                 1   2   3   4   5   6   7   8   9   10  Largura\n"
-						+ "█████████████████████░░░███████████████████\n" + "");
-		centro(2);
+						+ "█████████████████████░░░███████████████████");
+		centro(1);
 		
 	}
 
@@ -2924,7 +2925,6 @@ public class RPG_Game {
 		faze();
 		imgdesafio6();
 		
-		imgdesafio1();
 		int i = 1;
 		String resposta = "";
 		String respcorreta = "Casa da Largura 1";
@@ -2942,11 +2942,12 @@ public class RPG_Game {
 			imgComplementoDesafio6();
 			i = i + 1;
 			System.out.println(
-					 "\n                             a)" + resp.get(0)+
-					 "\n                             b)" + resp.get(1)+
-					 "\n                             c)" + resp.get(2)+
-					 "\n                             d)" + resp.get(3)+
-					 "\n                             e)" + resp.get(4));
+					 "\n                                 a)" + resp.get(0)+
+					 "\n                                 b)" + resp.get(1)+
+					 "\n                                 c)" + resp.get(2)+
+					 "\n                                 d)" + resp.get(3)+
+					 "\n                                 e)" + resp.get(4));
+			centro(3);;
 			String escolha = sc.next();
 			switch (escolha) {
 
@@ -2977,7 +2978,9 @@ public class RPG_Game {
 							}
 			if(resposta == respcorreta) {
 				gm = false;
-				System.out.println("Parabéns Alma sedenda pela vida voce conseguiu resolver o desafio!");
+				System.out.println(
+						"    Maldito Humano! Você conseguiu resolver o desafio "
+						+ "   Desapareça da minha frente!!!");
 				drible();
 				continuar();
 				i = 5;
