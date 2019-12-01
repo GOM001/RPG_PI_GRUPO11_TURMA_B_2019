@@ -2190,9 +2190,9 @@ public class RPG_Game {
 		System.out.println(
 
 				" " + "" + "" + "" + ""
-						+ "                        Ao passa por diversas dificuldade,*variavel nome* segue a oeste como orientado pela aranha assustadora. \n"
-						+ "                                       O mesmo entra em um grande matagal e segue ao norte conforme falado,\n "
-						+ "                     porém o mesmo vê uma figura  longe semelhante a um animal ao chegar mais perto ele vê um gato escondido em um arbusto ");
+						+ "                        Ao passa por diversas dificuldade,você segue a oeste como orientado pela aranha assustadora. \n"
+						+ "                                      entra em um grande matagal e segue por uma trilha bem demarcada\n "
+						+ "                     porém o  vê uma figura  longe semelhante a um animal ao chegar mais perto, você vê um gato escondido em um arbusto ");
 		centro(16);
 		continuar();
 
@@ -2822,11 +2822,180 @@ public class RPG_Game {
 		centro(5);
 		continuar();
 		
+		centro(5);
+		System.out.println(
+						  "                                             _______________________________________________________________________________________________        \n"
+						+ "                                             |                          Se errar,  elas imediatamente irão te atacar                        |       \n"
+						+ "                                             |                          Mas se acertar saberá por onde poderá passar                        |       \n"
+						+ "                                             |______________________________________________________________________________________________|       \n"
+						+ "                                            /                                                                                                       \n"
+						+ "                                           /                                                                                                        \n"
+						+ "█████████████▀▀▀▀▀███████▀▀▀▀▀█████████████\n"
+						+ "█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████\n"
+						+ "████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████\n"
+						+ "████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████\n"
+						+ "██▀░░░░░░██▀░░░░░█▄░░░░░▄█░░░▀██░░░░░░▀████\n"
+						+ "█░░░▀▀▀▀███░░░░░░▀██░░░██▀░░░░░░███▀▀▀▀░░░█\n"
+						+ "█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█\n"
+						+ "████▄░░░░▀██░░░░█ █  █  █ █░░░░██▀░░░░▄████\n"
+						+ "██████████▀██▄░░░▀█ █ █ ▀▀░░░▄██▀██████████\n"
+						+ "███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████\n"
+						+ "██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████\n"
+						+ "██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████\n"
+						+ "████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████\n"
+						+ "██████████████████▀░░▀█████████████████████\n"
+						+ "█████████████████▀░░░▄█████████████████████\n"
+						+ "█████████████████░░░███████████████████████\n"
+						+ "██████████████████░░░▀█████████████████████\n"
+						+ "███████████████████▄░░░████████████████████\n"
+						+ "█████████████████████░░░███████████████████\n" + "");
+		centro(5);
+		continuar();
+		
+		
+		centro(5);
+		System.out.println(
+						  "                                             _______________________________________________________________________________________________        \n"
+						+ "                                             |                                   Olhe esse campo com atenção                                |       \n"
+						+ "                                             |             a forma perfeita dele permite por largura e cumprimento sua separação            |       \n"
+						+ "                                             |______________________________________________________________________________________________|       \n"
+						+ "                                            /                                                                                                       \n"
+						+ "                                           /                                                                                                        \n"
+						+ "█████████████▀▀▀▀▀███████▀▀▀▀▀█████████████\n"
+						+ "█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████\n"
+						+ "████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████\n"
+						+ "████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████\n"
+						+ "██▀░░░░░░██▀░░░░░█▄░░░░░▄█░░░▀██░░░░░░▀████\n"
+						+ "█░░░▀▀▀▀███░░░░░░▀██░░░██▀░░░░░░███▀▀▀▀░░░█\n"
+						+ "█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█\n"
+						+ "████▄░░░░▀██░░░░█ █  █  █ █░░░░██▀░░░░▄████\n"
+						+ "██████████▀██▄░░░▀█ █ █ ▀▀░░░▄██▀██████████\n"
+						+ "███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████\n"
+						+ "██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████\n"
+						+ "██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████\n"
+						+ "████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████\n"
+						+ "██████████████████▀░░▀█████████████████████\n"
+						+ "█████████████████▀░░░▄█████████████████████\n"
+						+ "█████████████████░░░███████████████████████\n"
+						+ "██████████████████░░░▀█████████████████████\n"
+						+ "███████████████████▄░░░████████████████████\n"
+						+ "█████████████████████░░░███████████████████\n" + "");
+		centro(5);
+		continuar();
+		
+	}
+	
+	
+	static void imgComplementoDesafio6(){
+		centro(5);
+		System.out.println(
+						  "                                             _______________________________________________________________________________________________        \n"
+						+ "                                             |                                Sem mais demora resolva a função                              |       \n"
+						+ "                                             |                              Mas por favor tenha pressa e não atenção                        |       \n"
+						+ "                                             |              apenas uma pista vou te dar, pense como um gráfico esse lugar iria ficar        |       \n"
+						+ "                                             |                             e me diga a unica casa em que você poderá passar                |       \n"
+						+ "                                             |______________________________________________________________________________________________|       \n"
+						+ "                                            /                                                                                                       \n"
+						+ "                                           /                                                                                                        \n"
+						+ "█████████████▀▀▀▀▀███████▀▀▀▀▀█████████████\n"
+						+ "█████████▀░░▀▀█▄▄▄▄▄▄██▄▄▄▄▄▄█▀░░▀█████████\n"
+						+ "████████▄░░▄▄████▀▀▀▀▀▀▀▀▀████▄▄░░▄████████\n"
+						+ "████▀▀▀▀█████▀░░░░░░░░░░░░░░░▀█████▀▀▀▀████\n"
+						+ "██▀░░░░░░██▀░░░░░█▄░░░░░▄█░░░▀██░░░░░░▀████\n"
+						+ "█░░░▀▀▀▀███░░░░░░▀██░░░██▀░░░░░░███▀▀▀▀░░░█               saída                                   \n"
+						+ "█▄▄░░░░░░██░░░░▄░░▀▀░░░▀▀░░▄░░░░██░░░░░░▄▄█               |  |   f(largura) = (-1) * largura + 7  \n"
+						+ "████▄░░░░▀██░░░░█ █  █  █ █░░░░██▀░░░░▄████  comprimento  |  |____________________________________\n"
+						+ "██████████▀██▄░░░▀█ █ █ ▀▀░░░▄██▀██████████             5|                                        \n"
+						+ "███████▀░░░████▄▄░░░░░░░░░▄▄████░░░▀███████                                                       \n"
+						+ "██████░░░▄▀░░▀▀▀███████████▀▀▀░░▀▄░░░██████             4|                                        \n"
+						+ "██████░░░▀░░░░░░░░▄▄▄█▄▄▄░░░░░░░░▀░░░██████                                                       \n"
+						+ "████████▄▄▄▄▄▄███████████████▄▄▄▄▄▄████████             3|             Flor                       \n"
+						+ "██████████████████▀░░▀█████████████████████                                                       \n"
+						+ "█████████████████▀░░░▄█████████████████████             2|                                        \n"
+						+ "█████████████████░░░███████████████████████                            Você                       \n"
+						+ "██████████████████░░░▀█████████████████████             1| ___ ___ ___ ___ ___ ___ ___ ___ ___ ___\n"
+						+ "███████████████████▄░░░████████████████████                 1   2   3   4   5   6   7   8   9   10  Largura\n"
+						+ "█████████████████████░░░███████████████████\n" + "");
+		centro(2);
+		
 	}
 
 	static void desafio6() {
 		faze();
 		imgdesafio6();
+		
+		imgdesafio1();
+		int i = 1;
+		String resposta = "";
+		String respcorreta = "Casa da Largura 1";
+
+		ArrayList<String> resp = new ArrayList<String>();
+
+		resp.add("Casa da Largura 1");
+		resp.add("Casa da Largura 2");
+		resp.add("Casa da Largura 3");
+		resp.add("Casa da Largura 4");
+		resp.add("Ignorar a Flor e correr para qualquer direção");
+		boolean gm = false;
+
+		do {
+			imgComplementoDesafio6();
+			i = i + 1;
+			System.out.println(
+					 "\n                             a)" + resp.get(0)+
+					 "\n                             b)" + resp.get(1)+
+					 "\n                             c)" + resp.get(2)+
+					 "\n                             d)" + resp.get(3)+
+					 "\n                             e)" + resp.get(4));
+			String escolha = sc.next();
+			switch (escolha) {
+
+			case "a":
+			case "A":
+				resposta = resp.get(0);
+				break;
+			case "b":
+			case "B":
+				resposta = resp.get(1);
+				break;
+			case "c":
+			case "C":
+				resposta = resp.get(2);		
+				break;
+			case "D":
+			case "d":
+				resposta = resp.get(3);
+				break;
+			case "e":
+			case "E":
+				resposta = resp.get(4);
+			default:
+
+				System.out.println(" Opcao Invalida! Tente Novamente.");
+				drible();
+				continuar();
+							}
+			if(resposta == respcorreta) {
+				gm = false;
+				System.out.println("Parabéns Alma sedenda pela vida voce conseguiu resolver o desafio!");
+				drible();
+				continuar();
+				i = 5;
+			}
+			else {
+				gm = true;
+				System.out.println(" Essa não Jovem alma, deixe sua ansiedade de lado e tenta mais uma vez e nos salve desse deserto! ");
+				drible();
+				continuar();
+			}
+			
+			Collections.shuffle(resp);
+		} while (i < 3);
+			if(gm==true) {
+			
+			gameOver();
+	}
+			
 
 		fase[posicaoLoginAtual] = 7;
 		direcionaFaze();
