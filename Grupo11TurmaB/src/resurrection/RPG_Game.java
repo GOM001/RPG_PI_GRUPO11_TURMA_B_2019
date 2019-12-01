@@ -2218,46 +2218,192 @@ public class RPG_Game {
  * #############################################################################################################################################################
  */
 		static void imgdesafio4() {
-			System.out.println("\n "
-					+ "         ▄▀▄     ▄▀▄\r\n" + 
-					"         ▄█░░▀▀▀▀▀░░█▄\r\n" + 
-					"     ▄▄  █░░░░░░░░░░░█  ▄▄\r\n" + 
-					"    █  █ █░░▀░░┬░░▀░░█ █  █\r\n" + 
-					"  ▄▄███████████████████████▄▄\r\n" + 
-					" █▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" + 
-					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" + 
-					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" + 
-					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" + 
-					"████████████████████████████████\r\n" + 
-					"\n"
-					+ "\n"
-					+ "\n"
-					+ "");
-			sc.nextLine();
+			
+			
+			centro(7);
+			System.out.println("\n"
+					+ "                      __________________________________________________________________\n"
+					+ "                     |                                                                  | \n"
+					+ "                     |                          Não tenha medo.                         |  \n"
+					+ "                     |        Saudações Humano, vejo que está na mesma situação que eu, | \n"
+					+ "                     |                 acredito que podemos nos ajudar                  |   \n"
+					+ "                     | _________________________________________________________________|\n"
+					+ "                     /  \n"
+					+ "         ▄▀▄     ▄▀▄\r\n" +
+					"         ▄█░░▀▀▀▀▀░░█▄\r\n" +
+					"     ▄▄  █░░░░░░░░░░░█  ▄▄\r\n" +
+					"    █  █ █░░▀░░┬░░▀░░█ █  █\r\n" +
+					"  ▄▄███████████████████████▄▄\r\n" +
+					" █▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" +
+					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█ \n" +
+					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█   \n"+
+					"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█ \n"+
+					"████████████████████████████████\n");
+			centro(7);
+			continuar();
+			
+			centro(7);
+			System.out.println("\n" +
+					"                                             _______________________________________________________________________________________________        \n" +
+					"                                             |                                                                                              |       \n" +
+					"                                             |                                VOCÊ ESTÁ PRESO AQUI?                                         |       \n" +
+					"                                             |______________________________________________________________________________________________|       \n" +
+					"                                            /                                                                                                       \n" +
+					"                                           /                                                                                                        \n" +
+					"				        ██████████████████████            \n" + 
+					"				      ██████████████████████████          \n" + 
+					"				    ██████████████████████████████        \n" + 
+					"				    ████████████████████████████████      \n" + 
+					"				  ████████  ████████  ██████████████      \n" + 
+					"				  ██████      ████    ████  ████████      \n" + 
+					"				  ██████                      ████████    \n" + 
+					"				████████                      ██  ████    \n" + 
+					"				████████  ████       ████        ████     \n" + 
+					"				██████                         ██████     \n" + 
+					"				██████          ████          ████████    \n" + 
+					"				████████                   ████████████   \n" + 
+					"				████████████            ██████████████    \n" + 
+					"				  ██  ████████████    ██████████  ██      \n" + 
+					"				                ██    ██     ██           \n" +
+					"\n");
+			centro(7);
+			continuar();
+			
+			
+			System.out.println("\n"
+			+ "                      _____________________________________________________________________________\n"
+			+ "                     |                                                                             | \n"
+			+ "                     | Esse lugar escuro e tem muitas pistas, mas não consigo resolver as charadas.|  \n"
+			+ "                     |     No chão existem números que vão de zero até dez começando da            | \n"
+			+ "                     |       esquerda e seguindo para a sua direita. No teto eles estão a          |  \n"
+			+ "                     |             perder de vista começando junto com o zero no                   |  \n"
+			+ "                     |                     chão e se perdendo na escuridão.                        | \n"
+			+ "                     | ____________________________________________________________________________|\n"
+			+ "                     /  \n"
+			+ "         ▄▀▄     ▄▀▄\r\n" +
+			"         ▄█░░▀▀▀▀▀░░█▄\r\n" +
+			"     ▄▄  █░░░░░░░░░░░█  ▄▄\r\n" +
+			"    █  █ █░░▀░░┬░░▀░░█ █  █\r\n" +
+			"  ▄▄███████████████████████▄▄\r\n" +
+			" █▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\r\n" +
+			"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\n" +
+			"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\n" +
+			"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█\n" +
+			"████████████████████████████████\n");
+			centro(7);
+			continuar();
+	
+			
+			
+			centro(7);
+			System.out.println("\n" +
+					"                                             _______________________________________________________________________________________________        \n" +
+					"                                             |                                                                                              |       \n" +
+					"                                             |                                EU NÃO CONSIGOP VER ESSAS COISAS                              |       \n" +
+					"                                             |______________________________________________________________________________________________|       \n" +
+					"                                            /                                                                                                       \n" +
+					"                                           /                                                                                                        \n" +
+					"				        ██████████████████████            \n" + 
+					"				      ██████████████████████████          \n" + 
+					"				    ██████████████████████████████        \n" + 
+					"				    ████████████████████████████████      \n" + 
+					"				  ████████  ████████  ██████████████      \n" + 
+					"				  ██████      ████    ████  ████████      \n" + 
+					"				  ██████                      ████████    \n" + 
+					"				████████                      ██  ████    \n" + 
+					"				████████  ████       ████        ████     \n" + 
+					"				██████                         ██████     \n" + 
+					"				██████          ████          ████████    \n" + 
+					"				████████                   ████████████   \n" + 
+					"				████████████            ██████████████    \n" + 
+					"				  ██  ████████████    ██████████  ██      \n" + 
+					"				                ██    ██     ██           \n" +
+					"\n");
+			centro(7);
+			continuar();
+			
+
+			centro(5);
+			System.out.println("\n"
+			+ "                    _______________________________________________________________________________\n"
+			+ "                   |                                                                               | \n"
+			+ "                   |  É muito escuro aqui, mas meus olhos brilhantes me permitem ver muito bem     |  \n"
+			+ "                   |  mesmo no escuro. O problema é que não consigo desvendar o que está escrito   | \n"
+			+ "                   | nas placas no chão. Já tentei passar, mas as armadilhas são feitas para matar.|  \n"
+			+ "                   |   Tive sorte de escapar com vida, mas minha cauda já está extremamente ferida.|\n"
+			+ "                   | ______________________________________________________________________________|\n"
+			+ "                   /                                                    \n"
+			+ "         ▄▀▄     ▄▀▄                    10|                  /                               \r\n" +
+			"         ▄█░░▀▀▀▀▀░░█▄                    09|                /                       \r\n" +
+			"     ▄▄  █░░░░░░░░░░░█  ▄▄                08|              /                       \r\n" +
+			"    █  █ █░░▀░░┬░░▀░░█ █  █               07|            /                      \r\n" +
+			"  ▄▄███████████████████████▄▄             06|          /                     \r\n" +
+			" █▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█            05|        /                     \r\n" +
+			"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█          04|      /                     \r\n" +
+			"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█          03|    /                    \r\n" +
+			"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█          02|  /                        \r\n" +
+			"████████████████████████████████          01|/_________                       \r\n" +
+			"                                          00  01  02  03  04  05  06  07  08  09  10        \n"
+			+ "");
+			centro(5);
+			continuar();
+			
 		}
+		
+		
+		static void imgDesafio4Complementp() {
+			
+			System.out.println("\n"
+				+ "                    _____________________________________________________________________________________________\n"
+				+ "                   |                                                                                             | \n"
+				+ "                   |  O Caminho que vai seguir é muito fácil de distinguir deve o menor caminho procurar         |  \n"
+				+ "                   |  entre dois pontos para atravessar para você uma função  esse caminho deve representar      | \n"
+				+ "                   | ela o produto encontra do desconhecido pelo pelo número 2 o primeiro ponto é o desconhecido |  \n"
+				+ "                   |   substituído pelo início de tudo onde não existe a quantidade no segundo é a quantidade de |\n"
+				+ "                   | dedos do predador universal em uma única pata que deve usar para matar charada              |\n"
+				+ "                   |          E agora? o que você acha que isso pode representar?                                |\n"
+				+ "                   |                         tenho algumas opções para mostrar                                   |\n "
+				+ "                   |_____________________________________________________________________________________________|\n"
+				+ "                   /                                                    \n"
+				+ "         ▄▀▄     ▄▀▄                    10|                  /                               \r\n" +
+				"         ▄█░░▀▀▀▀▀░░█▄                    09|                /                       \r\n" +
+				"     ▄▄  █░░░░░░░░░░░█  ▄▄                08|              /                       \r\n" +
+				"    █  █ █░░▀░░┬░░▀░░█ █  █               07|            /                      \r\n" +
+				"  ▄▄███████████████████████▄▄             06|          /                     \r\n" +
+				" █▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█            05|        /                     \r\n" +
+				"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█          04|      /                     \r\n" +
+				"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█          03|    /                    \r\n" +
+				"█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█          02|  /                        \r\n" +
+				"████████████████████████████████          01|/_________                       \r\n" +
+				"                                          00  01  02  03  04  05  06  07  08  09  10        \n"
+				+ "");
+				centro(2);
+		}
+		
+		
 		static void desafio4() {
 			faze();
 			imgdesafio4();
 			boolean gm = true;
 			String r = "";
 			String resp = "";
-			String lul = "Função = desconhecido * 2 desconhecido = zero  e  cinco";
+			String lul = "Função = desconhecido * 2, para desconhecido = zero e cinco";
 			int n1 = 0;
 			ArrayList<String> resposta = new ArrayList<String>();
-			resposta.add("Função = desconhecido * 2 desconhecido = zero  e  cinco"); // correta
-			resposta.add(" Função = desconhecido * 2 desconhecido = um e três");
-			resposta.add("Função = desconhecido * 0 desconhecido = zero  e  três");
+			resposta.add("Função = desconhecido * 2, para desconhecido = zero e cinco"); // correta
+			resposta.add("Função = desconhecido * 2, para desconhecido = um e três");
+			resposta.add("Função = desconhecido * 0, para desconhecido = zero  e  três");
 			resposta.add("atravessar sem se preocupar com o caminho e deixar o gato para trás"); 
 
 			do {
-				
-				System.out.println("                                 E agora? o que você acha que isso pode representar? tenho algumas opções para mostrar: ");
+				imgDesafio4Complementp();
+				System.out.println("                         E agora? o que você acha que isso pode representar? tenho algumas opções para mostrar: \n");
 				Collections.shuffle(resposta);
 				System.out.println("                                     A)" + resposta.get(0));
 				System.out.println("                                     B)" + resposta.get(1));
 				System.out.println("                                     C)" + resposta.get(2));
 				System.out.println("                                     D)" + resposta.get(3));
-				
+				centro(3);
 				r = sc.next();
 
 				
