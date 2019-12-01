@@ -84,16 +84,6 @@ public class RPG_Game {
 
 			//MÉTODO PARA CHAMAR INICIO E MENU (ZERO)
 			static int zero() {
-				login[0] = "AuBispo";
-				fase[0] = 3;
-				login[1] = "PH Fodão";
-				fase[1] = 2;
-				login[2] = "Gom";
-				fase[2] = 6
-						
-						;
-				login[3] = "FPohaLoka";
-				fase[3] = 4;
 				int parada = 0;
 				do {
 					inicio();
@@ -2186,15 +2176,16 @@ public class RPG_Game {
 	}
 
 	static void transicao4() {
-		centro(16);
+		centro(15);
 		System.out.println(
-
-				" " + "" + "" + "" + ""
-						+ "                        Ao passa por diversas dificuldade,você segue a oeste como orientado pela aranha assustadora. \n"
-						+ "                                      entra em um grande matagal e segue por uma trilha bem demarcada\n "
-						+ "                     porém o  vê uma figura  longe semelhante a um animal ao chegar mais pert"
-						+ "");
-		centro(16);
+				  "                               Após descer o abismo você vê uma caverna escura a sua frente,\n"
+				+ "                               não há mais nada a não ser a caverna, o abismo a sua volta e\n"
+				+ "                               as teias de aranha das quais você queria distância.         \n"
+				+ "                               Sem opção você entra na caverna com visão totalmente \n"
+				+ "                               limitada e se assusta ao ver um par de olhos laranja brilhando\n"
+				+ "                                ao longe como se o olhasse fixamente,\n"
+				+ "                               Você tenta chamar seja lá o que o estivesse te encarando: \n" );
+		centro(15);
 		continuar();
 
 		fase[posicaoLoginAtual] = 4;
